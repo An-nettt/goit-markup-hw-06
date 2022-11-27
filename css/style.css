@@ -604,6 +604,11 @@ header {
 .footer-list {
     display: flex;
     align-items: baseline;
+    justify-content: space-between;
+}
+
+.footer-contacts {
+    margin-right: 70px;
 }
 
 .logo-footer {
@@ -623,9 +628,7 @@ header {
 }
 
 .address {
-    transition: color var(--transition);
-    
-    margin-right: 70px;
+    transition: color var(--transition);   
 
     color: var(--hero-text);
     font-style: normal;
@@ -651,6 +654,10 @@ header {
     color: var(--accent-color);
 }
 
+.join {
+    margin-right: 93px;
+}
+
 .join .title,
 .subscribe .title {
     margin-bottom: 20px;
@@ -671,10 +678,6 @@ header {
 .join-item {
     width: 44px;
     height: 44px;
-}
-
-.join-item:last-child {
-    margin-right: 93px;
 }
 
 .join-item .soc-link {
@@ -705,10 +708,6 @@ header {
     fill: currentColor;
 }
 
-.subscribe {
-    
-}
-
 .subscribe .title {
     margin-bottom: 20px;
 }
@@ -719,13 +718,14 @@ header {
 
 .subscribe-label {
     margin-right: 12px;
+    width: 358px;
 }
 
 .subscribe-input {
     transition: border-color var(--transition);
-    
-    width: 358px;
-    height: 50px;
+    box-sizing: border-box;
+
+    width: 100%;
     padding: 15px 16px;
 
     background-color: transparent;
